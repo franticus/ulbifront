@@ -1,3 +1,3 @@
 import { consoleText } from "./test";
 
-consoleText();
+consoleText(1);
