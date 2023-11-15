@@ -8,7 +8,7 @@ type Props = {
 const defaultTheme =
   (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
 
-const ThemeProvider: FC = (props: Props) => {
+const ThemeProvider: FC<Props> = (props: Props) => {
   const [theme, setTheme] = useState<Theme>(defaultTheme);
 
   const defaultProps = useMemo(
